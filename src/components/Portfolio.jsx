@@ -1,4 +1,7 @@
 import { Grid, Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import weatherForecast from '../assets/weather_forecast.png';
+import futureProjectOne from '../assets/future_project.webp';
+import futureProjectTwo from '../assets/future_project_2.webp';
 
 export default function Portfolio() {
   const projects = [
@@ -6,19 +9,19 @@ export default function Portfolio() {
       title: 'Weather Forecast', 
       deployedUrl: 'https://weatherforecast-webapp.onrender.com', 
       githubUrl: 'https://github.com/O-KenneDevWorks/WeatherForecast-WebApp',
-      image: '../../src/assets/weather_forecast.png'
+      image: {weatherForecast}
     },
     { 
       title: 'Future Project #1', 
       deployedUrl: 'https://comingsoon.webapp', 
       githubUrl: 'https://github.com/O-KenneDevWorks', 
-      image: '../../src/assets/future_project.webp'
+      image: {futureProjectOne}
     },
     { 
       title: 'Future Project #2', 
       deployedUrl: 'https://comingsoon.webapp', 
       githubUrl: 'https://github.com/O-KenneDevWorks', 
-      image: '../../src/assets/future_project_2.webp'
+      image: {futureProjectTwo}
     },
     // More projects here...
   ];

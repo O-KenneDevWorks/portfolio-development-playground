@@ -1,4 +1,5 @@
 import { Avatar, Typography, Container, Grid } from '@mui/material';
+import weatherForecast from '../assets/avatar-image.webp';
 
 export default function About() {
   return (
@@ -7,7 +8,7 @@ export default function About() {
         <Grid item xs={12} md={4}>
           <Avatar
             alt="Developer"
-            src="../../src/assets/avatar-image.webp"
+            src={weatherForecast}
             sx={{ width: 150, height: 150 }}
           />
         </Grid>
