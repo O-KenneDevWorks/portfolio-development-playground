@@ -13,7 +13,7 @@ export default function Footer() {
         <IconButton href="https://www.linkedin.com/in/owen-kenne/" target="_blank">
           <LinkedInIcon />
         </IconButton>
-        <IconButton href="https://dev.to/owen_kenne_caa3216f9ab500" target="_blank">
+        <IconButton href="https://stackoverflow.com/users/27737290/o-kennedevworks?tab=profile" target="_blank">
           <PublicIcon /> {/* Using PublicIcon as a placeholder for StackOverflow */}
         </IconButton>
       </Box>
