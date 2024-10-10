@@ -1,7 +1,8 @@
-import { Grid, Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import { Grid, Container } from '@mui/material';
 import weatherForecast from '../assets/weather_forecast.png';
 import futureProject from '../assets/future_project.webp';
 import futureProject2 from '../assets/future_project_2.webp';
+import Project from './Project.jsx';
 
 export default function Portfolio() {
   const projects = [
@@ -39,31 +40,12 @@ export default function Portfolio() {
   }
 
   return (
-    <Grid container spacing={3} sx={{ padding: 3 }}>
-      {projects.map((project, index) => (
-        <Grid item xs={12} sm={6} md={4} key={index}>
-          <Card>
-            <CardMedia component="img" height="140" image={project.image} alt={project.title} />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {project.title}
-              </Typography>
-              <Button
-                size="small" href={project.deployedUrl}
-                target="_blank"
-                sx={buttons}>
-                Live Demo
-              </Button>
-              <Button
-                size="small" href={project.githubUrl}
-                target="_blank"
-                sx={buttons}>
-                GitHub
-              </Button>
-            </CardContent>
-          </Card>
-        </Grid>
-      ))}
-    </Grid>
+    <Container>
+      <Grid container spacing={3}>
+        {projects.map((project, index) => (
+          <Project key={index} {...project} />
+        ))}
+      </Grid>
+    </Container>
   );
 }
