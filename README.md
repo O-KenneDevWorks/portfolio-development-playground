@@ -51,6 +51,20 @@ Once the application is running, users can navigate between different sections t
 - **Contact**: Fill out a contact form with validations to send a message to the developer.
 - **Resume**: View the developer's resume and download a copy.
 
+## Screenshots
+
+### About Me Section
+![About Me](./screenshots/about.png)
+
+### Portfolio Section
+![Portfolio](./screenshots/portfolio.png)
+
+### Contact Form
+![Contact Form](./screenshots/contact.png)
+
+### Resume Section
+![Resume Section](./screenshots/Resume.png)
+
 ## Deployment
 The project is deployed on Netlify and can be accessed online:
 
