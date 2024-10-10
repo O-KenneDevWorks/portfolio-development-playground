@@ -27,18 +27,6 @@ export default function Portfolio() {
     // More projects here...
   ];
 
-  // Styling for application buttons
-  const buttons =
-  {
-    marginTop: 1,
-    marginRight: 2,
-    backgroundColor: 'secondary.main', // Use secondary.main color for background
-    color: 'white', // White text color
-    '&:hover': {
-      backgroundColor: 'secondary.dark', // Darker color on hover
-    },
-  }
-
   return (
     <Container>
       <Grid container spacing={3}>
